@@ -1,0 +1,1220 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    z-index: 0;
+}
+
+.bodyTotal{
+    z-index: 2;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* ---------------  HEADER   ------------- */
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+nav{
+    background-color: #fff;
+    border-bottom: 2px solid rgb(151, 146, 146);
+}
+
+nav ul {
+    color: rgb(245, 240, 192);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr); 
+    align-items: center;
+    justify-items: center;
+}
+
+
+nav ul li img {
+    object-fit: cover;
+    height: 6rem;
+    width: 6rem;
+}
+
+nav ul li a {
+color: rgb(0, 0, 0);
+font-weight: 900;
+font-size: 1.5rem;
+}
+
+
+/* ---------------     FOOTER    ------------- */
+
+footer{
+    margin-top: 4rem;
+    bottom:0px;
+    background: #ffffff;
+    height: 4rem;
+    display: grid;
+    grid-template-columns: repeat (3,1fr );
+    border-top: rgb(151, 146, 146) 2px solid;
+}
+    
+
+footer .div-p {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .icons {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+
+/* -------------------------------- Pagina INDEX ----------------------------------------- */
+
+
+
+/* ----SECTION H1&IMG---- */
+
+
+.h1-img {
+    height: 50rem;
+    width: 137.59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.video-index{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.h1-img h1{
+    font-size: 5rem;
+}
+
+.div-h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.h1-img .div-a {
+    display: flex;
+    transform: rotate(90deg);
+    justify-content:center;
+    align-items: flex-end;
+    align-self:center;
+}
+
+.div-a a{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    font-weight: 600;
+    z-index: 20;
+    
+}
+
+
+/* ----SECTION Index Catalogo---- */
+
+.sec-index-catalog{
+    height: 12rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+}
+
+.sec-index-catalog h2{
+    width: 100%;
+    grid-column: 2/5;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.sec-index-catalog .p-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.7rem;
+    color: rgb(124, 73, 172); 
+    font-weight: 1000; 
+}
+
+.sec-index-catalog div{
+    grid-column: 6/11;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 2rem;
+    height: 12rem;
+}
+
+.sec-index-catalog div img{
+    margin-right: 1rem;
+}
+
+.sec-index-catalog div .img1{
+    z-index: 30;
+    border: solid 3px rgb(56, 36, 56);
+}
+
+.sec-index-catalog div .img2{
+    z-index: 20;
+    margin-right: -10rem;
+}
+.sec-index-catalog div .img3{
+    z-index: 20;
+    margin-left: -10rem;
+}
+
+.sec-index-catalog .p-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.7rem;
+    color: rgb(124, 73, 172);
+    font-weight: 1000;   
+}
+
+
+/* ----SECTION Index Referencias---- */
+
+.sec-index-ref{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows: repeat (3,1fr);
+    grid-gap: 5rem;
+}
+
+.sec-index-ref img{
+    border-radius: 3.5rem;
+}
+
+.sec-index-ref h2{
+    width: 100%;
+    grid-column: 6/8;
+    grid-row: 1;
+    font-size: 1.5rem;
+
+}
+
+.sec-index-ref .ref1{
+    grid-column: 1/12;
+    grid-row: 2;
+    margin-left: 2.5rem;
+    display: flex;
+}
+
+.sec-index-ref .ref1 p {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    font-weight: 590;
+}
+
+
+.sec-index-ref .ref2{
+    grid-column: 1/12;
+    grid-row: 3;
+    margin-left: 2.5rem;
+    display: flex;
+}
+
+.sec-index-ref .ref2 p {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.sec-index-ref .ref3{
+    grid-column: 1/12;
+    grid-row: 4;
+    margin-left: 2.5rem;
+    display: flex;
+}
+
+.sec-index-ref .ref3 p {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- Pagina TIENDA ----------------------------------------- */
+
+.body-tienda {
+    background-color: #EECFD4;
+}
+
+.h1-tienda{
+    height: 14rem;
+    width: 137.59;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-tienda h1{
+    font-size: 3rem;
+}
+
+
+
+.section-tienda{
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat (4,1fr );
+    grid-gap: 4rem;
+}
+
+.prod1{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 30rem);
+}
+
+.prod1 div {
+    display: flex;
+    flex-direction: column;
+    align-self:stretch;
+    justify-content: space-around;
+}
+
+
+.prod2{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 30rem);
+}
+
+.prod2 div {
+    display: flex;
+    flex-direction: column;
+    align-self:stretch;
+    justify-content: space-around;
+}
+
+.prod3{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 30rem);
+}
+
+.prod3 div {
+    display: flex;
+    flex-direction: column;
+    align-self:stretch;
+    justify-content: space-around;
+}
+
+
+.p-name{
+    display: flex;
+    align-self: center;
+}
+
+.p-name p {
+    display: flex;   
+    font-size: 1.5rem;
+}
+
+.price {
+    display: flex;
+    align-self: center;
+}
+
+.price p {
+    display: flex;   
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------- Pagina PRODUCTOS ----------------------------------------- */
+
+.body-productos {
+    background-color: #B3D1C1;
+}
+
+
+.h1-img-productos {
+    height: 50rem;
+    width: 100%;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.h1-img-productos h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.div-h1-prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ---- imagenes y texto---- */
+
+.section-productos {
+    display: grid;
+    grid-template-columns: repeat (3,1fr );
+    grid-template-rows: repeat (4,1fr);
+    grid-gap: 10rem;
+}
+
+.product1{
+    grid-row: 1;
+    display: flex;
+    border-top: #937595 solid 2.5px;
+    border-bottom: #937595 solid 2.5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product1 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.img img{
+    border-radius: 10%;
+}
+
+.product1 .p-productos{
+    width: 50%;
+    padding-bottom: 2.5rem;
+}
+
+
+
+.product2{
+    grid-row: 2;
+    display: flex;
+    border-top: #937595 solid 2.5px;
+    border-bottom: #937595 solid 2.5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product2 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.product2 .p-productos{
+    width: 50%;
+    padding-bottom: 2.5rem;
+}
+
+
+
+.product3{
+    grid-row: 3;
+    margin-bottom: 5rem;
+    display: flex;
+    border-top: #937595 solid 2.5px;
+    border-bottom: #937595 solid 2.5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product3 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.product3 .p-productos{
+    width: 50%;
+    padding-bottom: 2.5rem;
+}
+
+
+
+
+/* -------------------------------- Pagina NOSOTROS ----------------------------------------- */
+
+.body-nosotros { 
+    background-color: #a5aaca;
+}
+
+.h1-nosotros {
+    display: flex;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;    
+}
+
+.h1-nosotros h1{
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.section-nosotros{
+    margin-top: 10rem;
+    margin-left: 4rem;
+    margin-bottom: 15rem;
+    display: grid;
+    grid-template-columns: repeat (3,1fr );
+    grid-template-rows: repeat (2,1fr );
+    grid-gap:20rem;
+}
+
+.nosotros1 {
+    display: flex;
+    grid-row: 1;
+}
+
+.img-nosotros1{
+    margin-right: 4rem;
+    border-radius: 50%;
+}
+
+.p-nosotros1{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+
+
+.nosotros2 {
+    display: flex;
+    grid-row: 2;
+}
+
+.img-nosotros2{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p-nosotros2{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- Pagina CONTACTO ----------------------------------------- */
+
+
+.body-contacto{
+    background-color: #d2b9f3;
+
+}
+
+.h1-contacto{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.h1-contacto h1{
+    font-size: 3rem;
+}
+
+
+.section-contacto{
+    margin: auto;
+    width: 50rem;
+    height:40rem;
+    border: #ffee99 3px solid
+    
+}
+
+form{
+    width: 50rem;
+    display: grid;
+    grid-template-columns: repeat (2,1fr );
+}
+
+.form-left {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 2rem .5rem 4rem 4rem;
+}
+
+.form-left input { 
+    width: 17rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+    border: #ffee99 1px solid;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+.form-right{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 2rem 3rem 4rem .5rem;
+}
+
+.form-right input { 
+    width: 17rem;
+    height: 2rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+    border: #ffee99 1px solid;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+.input-consulta{
+    display: flex;
+    margin: 0 .5rem 4rem 4rem;
+    width: 20rem;
+}
+
+#consulta{
+    width: 15rem;
+    max-height: 8rem;
+    padding: 1rem;
+    border: #ffee99 1px solid;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+.input-boton{
+    display: flex;
+    height: 10rem;
+    align-items: center;
+    padding-left: 4rem;
+}
+
+.input-boton input{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5%;
+    background-color: #ffda1f;
+    border: #ffda1f 1px solid;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************** MEDIA QUERIES **********************************************************/
+
+@media screen and (max-width: 768px) {
+
+    *{
+        font-size: 8px;
+    }
+
+header { 
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* -----------Footer QUERIES------------- */
+
+footer{
+    margin-top: 14rem;
+    bottom:0px;
+    background: #ffffff;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+footer .div-p {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer .div-p p{
+    font-size: 2rem;
+}
+
+.div-p a {
+    font-size: 2rem;
+}
+
+footer .icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+
+
+
+
+
+/* -------------------------------- INDEX QUERIES ----------------------------------------- */
+
+
+
+
+
+.h1-img {
+    height: 30rem;
+    width:100%;
+}
+
+.h1-img h1{
+    font-size: 8rem;
+}
+
+.video-index {
+    height: 30rem;
+}
+
+.h1-img .div-a {
+    display: none;
+}
+
+
+/* ----Index Catalogo QUERIES---- */
+
+
+
+
+.sec-index-catalog{
+    margin-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-index-catalog h2{
+    justify-content: center;
+    font-size: 3.5rem;
+
+}
+
+.carrusel-index{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.sec-index-catalog .p-left{
+    margin-left: 14rem;
+    margin-right: .2rem;
+    justify-content: flex-start;
+    font-size: 7rem; 
+}
+
+
+.sec-index-catalog .p-right{
+    margin-right: 14rem;
+    margin-left: -2rem;
+    align-items: flex-end;
+    font-size: 7rem;  
+}
+
+
+.sec-index-catalog .carrusel{
+    display: flex;
+    flex-direction:row; 
+}
+
+.sec-index-catalog div img{
+    width: 17rem;
+    height: 17rem;
+}
+
+/* ----Index Referencias QUERIES---- */
+
+.sec-index-ref h2{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+
+.ref1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ref1 img{
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;    
+}
+
+.sec-index-ref .ref1 p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+.ref2{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ref2 img{
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;    
+}
+
+.sec-index-ref .ref2 p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+.ref3{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ref3 img{
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;    
+}
+
+.sec-index-ref .ref3 p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+
+
+
+/* --------------------------------TIENDA QUERIES ----------------------------------------- */
+
+
+
+
+.h1-tienda{
+    height: 30vh;
+    width: 100%;
+}
+
+.h1-tienda h1{
+    font-size: 6rem;
+}
+
+
+.section-tienda{
+    margin-left: 2rem;
+    width: 90%;
+}
+
+.section-tienda p {
+    font-size: 2rem;
+}
+
+.prod1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.prod1 div {
+    margin-left: 3rem;
+    width: 100%;
+}
+
+
+.prod2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.prod2 div {
+    margin-left: 3rem;
+    width: 100%;
+}
+
+.prod3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.prod3 div {
+    margin-left: 3rem;
+    width: 100%;
+}
+
+
+
+
+/* --------------------------------PRODUCTOS QUERIES----------------------------------------- */
+
+
+.h1-img-productos {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-img-productos h1{
+    font-size: 4rem;
+}
+
+
+/* ---- imagenes y texto---- */
+
+.section-productos {
+    display: grid;
+    grid-template-columns: repeat (3,1fr );
+    grid-template-rows: repeat (3,1fr);
+    grid-gap: 17rem;
+}
+
+.product1{
+    border-top: #937595 solid 4px;
+    border-bottom: #937595 solid 4px;
+}
+
+.product1 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    transform: scale(.8);
+}
+
+.img img{
+    border-radius: 10%;
+}
+
+.product1 .p-productos{
+    padding:0 2rem 2.5rem 2rem;
+    transform: scale(1.9);
+    margin-bottom: 2rem;
+}
+
+
+
+.product2{
+    border-top: #937595 solid 4px;
+    border-bottom: #937595 solid 4px;
+}
+
+.product2 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    transform: scale(.8);
+}
+
+.product2 .p-productos{
+    padding:0 2rem 2.5rem 2rem;
+    transform: scale(1.9);
+    margin-bottom: 2rem;
+}
+
+
+
+.product3{
+    border-top: #937595 solid 4px;
+    border-bottom: #937595 solid 4px;  
+}
+
+.product3 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    transform: scale(.8);
+}
+
+.product3 .p-productos{
+    padding:0 2rem 2.5rem 2rem;
+    transform: scale(1.9);
+    margin-bottom: 2rem;
+}
+
+
+
+/* --------------------------------NOSOTROS QUERIES----------------------------------------- */
+
+
+.h1-nosotros h1{
+    font-size: 8rem;
+}
+
+
+
+.section-nosotros{
+    margin-top: 10rem;
+    margin-left: 4rem;
+    margin-bottom: 15rem;
+    display: grid;
+    grid-template-columns: repeat (3,1fr );
+    grid-template-rows: repeat (2,1fr );
+    grid-gap:20rem;
+}
+
+.nosotros1 {
+    flex-direction: column;
+}
+
+.img-nosotros1{
+    transform: scale(.8);
+}
+
+.p-nosotros1{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.p-nosotros1 p{
+    line-height: 1.8;
+    font-size: 2rem;
+}
+
+.nosotros2 {
+    flex-direction: column-reverse;
+}
+
+.img-nosotros2{
+    margin-left: 0rem;
+    margin-right: 4rem;
+    transform: scale(.8);
+}
+
+.p-nosotros2{
+    display: flex;
+    align-items: center;
+}
+
+.p-nosotros2 p{
+    line-height: 1.8;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* --------------------------------CONTACTO QUERIES----------------------------------------- */
+
+
+.h1-contacto{
+    height: 30rem;  
+}
+
+.h1-contacto h1{
+    font-size: 4.5rem;
+}
+
+
+.section-contacto{
+    height:80rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-nombre {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    order: 1;
+}
+
+.form-nombre input {
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-apellido {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    margin-bottom: -4rem;
+}
+
+.form-apellido input {
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-email {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+}
+
+.form-email input {
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-telefono {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+}
+
+.form-telefono input {
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.input-consulta {
+    margin: auto;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.input-consulta #consulta {
+    width: 40rem;
+    padding:1rem;
+    font-size: 1.5rem;
+}
+
+
+.input-boton {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+}
+
+.input-boton input {
+    width: 30rem;
+    height: 5rem;
+    font-size:2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
