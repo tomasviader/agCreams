@@ -25,6 +25,13 @@ header{
     z-index: 100;
 }
 
+
+.content-fluid{
+    display: flex;
+    justify-content: center;
+}
+
+/*
 nav{
     background-color: #fff;
     border-bottom: 2px solid rgb(151, 146, 146);
@@ -44,9 +51,9 @@ nav ul li img {
     object-fit: cover;
     height: 6rem;
     width: 6rem;
-}
+} */
 
-nav ul li a {
+/* nav ul li a {
     color: rgb(0, 0, 0);
     font-weight: 900;
     font-size: 1.5rem;
@@ -55,7 +62,7 @@ nav ul li a {
 nav ul li a:hover{
     border-bottom: 2px solid rgb(151, 146, 146);
 }
-
+ */
 
 /* ---------------     FOOTER    ------------- */
 
@@ -91,30 +98,7 @@ footer .icons {
 
 
 
-/* ----SECTION H1&IMG---- */
-
-
-.h1-img {
-    height: 50rem;
-    width: 137.59;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.video-index{
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.h1-img h1{
+/* .h1-img h1{
     font-size: 5rem;
     animation-name: h1-index;
     animation-duration: 2s;
@@ -136,26 +120,10 @@ footer .icons {
     100%{
         transform: translateY(0vw);
     }
-}
+} */
 
-.div-h1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 20;
-}
 
-.h1-img .div-a {
-    margin-top: 14rem;
-    display: flex;
-    transform: rotate(90deg);
-    justify-content:center;
-    align-items: flex-end;
-    align-self:center;
-}
-
-.div-a a{
+/* .div-a a{
     color: rgb(0, 0, 0);
     font-size: 4rem;
     font-weight: 600;
@@ -177,147 +145,8 @@ footer .icons {
     100%{
         transform: translateX(0vw);
     }
-}
+} */
 
-/* ----SECTION Index Catalogo---- */
-
-.sec-index-catalog{
-    height: 12rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    display: grid;
-    grid-template-columns:repeat(12,1fr);
-}
-
-.sec-index-catalog h2{
-    width: 100%;
-    grid-column: 2/5;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-
-}
-
-.sec-index-catalog .p-left{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.7rem;
-    color: rgb(124, 73, 172); 
-    font-weight: 1000; 
-}
-
-.sec-index-catalog div{
-    grid-column: 6/11;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 2rem;
-    height: 12rem;
-}
-
-.sec-index-catalog div img{
-    margin-right: 1rem;
-}
-
-.sec-index-catalog div .img1{
-    z-index: 30;
-    border: solid 3px rgb(56, 36, 56);
-}
-
-.sec-index-catalog div .img2{
-    z-index: 20;
-    margin-right: -10rem;
-}
-.sec-index-catalog div .img3{
-    z-index: 20;
-    margin-left: -10rem;
-}
-
-.sec-index-catalog .p-right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.7rem;
-    color: rgb(124, 73, 172);
-    font-weight: 1000;   
-}
-
-
-/* ----SECTION Index Referencias---- */
-
-.sec-index-ref{
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns:repeat(12,1fr);
-    grid-template-rows: repeat (3,1fr);
-    grid-gap: 5rem;
-}
-
-.sec-index-ref img{
-    border-radius: 3.5rem;
-    transition: 1s;
-}
-
-.sec-index-ref img:hover{
-    transform: scale(1.2);
-}
-
-
-.sec-index-ref h2{
-    width: 100%;
-    grid-column: 6/8;
-    grid-row: 1;
-    font-size: 1.5rem;
-
-}
-
-.sec-index-ref .ref1{
-    grid-column: 1/12;
-    grid-row: 2;
-    margin-left: 2.5rem;
-    display: flex;
-}
-
-.sec-index-ref .ref1 p {
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.5;
-    font-weight: 590;
-}
-
-
-.sec-index-ref .ref2{
-    grid-column: 1/12;
-    grid-row: 3;
-    margin-left: 2.5rem;
-    display: flex;
-}
-
-.sec-index-ref .ref2 p {
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.5;
-}
-
-.sec-index-ref .ref3{
-    grid-column: 1/12;
-    grid-row: 4;
-    margin-left: 2.5rem;
-    display: flex;
-}
-
-.sec-index-ref .ref3 p {
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.5;
-}
 
 
 
@@ -804,9 +633,9 @@ form{
         font-size: 8px;
     }
 
-header { 
+/* header { 
     display: none;
-}
+} */
 
 
 

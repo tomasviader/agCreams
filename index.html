@@ -1,101 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/imagenes/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Inicio</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="paginas/tienda.html">Tienda</a>
-                </li>
-                <li>
-                    <a href="paginas/productos.html">Productos</a>
-                </li>
-                <li>
-                    <a class="img-nav" href="index.html">
-                    <img src="imagenes/logo.png" alt="Inicio">
-                    </a>
-                </li>        
-                <li>
-                    <a href="paginas/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="paginas/contacto.html">Contacto</a>
-                </li>
-            </ul>
-    </header>
-    
-    
-    <main>
-    <section class="h1-img">
-        <video class="video-index" autoplay="" muted="" loop="">
-            <source src="imagenes/video.mp4" type="video/mp4">
-        </video>
-        <div class="div-h1"><h1>Inicio</h1></div>
-        <div class="div-a" id="div-arrow"><a href="#div-arrow">>></a></div>
-    </section>    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+            <div class="row w-100">
+                <div class="col"><a class="navbar-brand col d-flex justify-content-end " href="#"><img src="/imagenes/logo.png" width="100px" height="100px"></a>
+                </div>
 
-    <section class="sec-index-catalog">
-    <h2 class="h2-index">Nuestros productos</h2>
-        <div class="carrusel-index">
-            <p class="p-left"><<</p>
-            <div class="carrusel">
-                <img class="img2" src="https://dummyimage.com/200/e096e0/&text=2" alt="imagen2">
-                <img class="img1" src="https://dummyimage.com/200/946694/&text=1"alt="imagen1">
-                <img class="img3" src="https://dummyimage.com/200/e096e0/&text=3"alt="imagen3">
+                <div class="col d-flex justify-content-end align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex justify-content-end align-items-center">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled">Disabled</a>
+                    </div>
+                </div>
             </div>
-            <p class="p-right">>></p>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="sec-index-ref">
+    </main>
 
-        <h2>Referencias</h2>
-
-        <div class="ref1">
-            <img src="https://dummyimage.com/200/000/fff" alt="ref1">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quia itaque culpa voluptatem debitis praesentium? Voluptates labore, provident cupiditate ipsum excepturi explicabo repudiandae optio, cum quae veritatis maxime accusamus ratione?
-            </p>
+    <footer>
+        <div class="div-p">
+            <p>Tenes alguna consulta? <a href="paginas/contacto.html">Contactanos!</a> </p>
         </div>
 
-        <div class="ref2">
-            <img src="https://dummyimage.com/200/000/fff" alt="ref2">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quia itaque culpa voluptatem debitis praesentium? Voluptates labore, provident cupiditate ipsum excepturi explicabo repudiandae optio, cum quae veritatis maxime accusamus ratione?
-            </p>
+        <div class="icons">
+            <a class="footerWp" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            <a class="footerIg" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a class="footerFb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i> </a>
+            <a class="footerMap"
+                href="https://www.google.com/maps/place/C%C3%B3rdoba,+Cordoba/@-31.399377,-64.3344291,11z/data=!3m1!4b1!4m5!3m4!1s0x9432985f478f5b69:0xb0a24f9a5366b092!8m2!3d-31.4200833!4d-64.1887761"><i
+                    class="fas fa-map-marker-alt"></i></a>
         </div>
-
-        <div class="ref3">
-            
-            <img src="https://dummyimage.com/200/000/fff" alt="ref3">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quia itaque culpa voluptatem debitis praesentium? Voluptates labore, provident cupiditate ipsum excepturi explicabo repudiandae optio, cum quae veritatis maxime accusamus ratione?
-            </p>
-        </div>
-    </section>
-</main>
-    
-<footer>
-    <div class="div-p">
-        <p>Tenes alguna consulta? <a href="paginas/contacto.html">Contactanos!</a> </p>
-    </div>
-    
-    <div class="icons">
-        <a  class="footerWp"   href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-        <a class="footerIg" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        <a class="footerFb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i> </a>
-        <a class="footerMap" href="https://www.google.com/maps/place/C%C3%B3rdoba,+Cordoba/@-31.399377,-64.3344291,11z/data=!3m1!4b1!4m5!3m4!1s0x9432985f478f5b69:0xb0a24f9a5366b092!8m2!3d-31.4200833!4d-64.1887761"
-        ><i class="fas fa-map-marker-alt"></i></a>
-    </div>
-</footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
-</html> 
+
+</html>
