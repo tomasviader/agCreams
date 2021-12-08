@@ -31,13 +31,12 @@ header{
     justify-content: center;
 }
 
-/*
-nav{
-    background-color: #fff;
+
+.navbar{
     border-bottom: 2px solid rgb(151, 146, 146);
 }
 
-nav ul {
+.navbar ul {
     color: rgb(245, 240, 192);
     list-style: none;
     display: grid;
@@ -47,20 +46,21 @@ nav ul {
 }
 
 
-nav ul li img {
+.navbar button{
     object-fit: cover;
     height: 6rem;
     width: 6rem;
-} */
+}
 
-/* nav ul li a {
+.navbar-nav a {
     color: rgb(0, 0, 0);
     font-weight: 900;
     font-size: 1.5rem;
 }
 
-nav ul li a:hover{
+.navbar a:hover{
     border-bottom: 2px solid rgb(151, 146, 146);
+    color: #725a74;
 }
  */
 
@@ -97,8 +97,14 @@ footer .icons {
 /* -------------------------------- Pagina INDEX ----------------------------------------- */
 
 
+.h1-img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+}
 
-/* .h1-img h1{
+.h1-img h1{
     font-size: 5rem;
     animation-name: h1-index;
     animation-duration: 2s;
