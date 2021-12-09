@@ -8,3 +8,42 @@
     z-index: 0; }
     * body a {
       text-decoration: none; }
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: #fff; }
+  header .navbar {
+    border-bottom: #979292 2px solid; }
+    header .navbar .navbar-toggler {
+      display: inline-block;
+      border: #000000 1px solid;
+      height: 8rem;
+      width: 8rem;
+      margin-right: 4rem; }
+    header .navbar .navbar-nav a {
+      color: black;
+      font-weight: 900;
+      font-size: 1.5rem; }
+    header .navbar .navbar-nav a:hover {
+      border-bottom: 2px solid #979292;
+      color: #725a74; }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  bottom: 0px;
+  background: #ffffff;
+  height: 4rem;
+  border-top: #979292 2px solid; }
+  footer .div-p {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  footer .icons {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly; }

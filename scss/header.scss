@@ -1,0 +1,31 @@
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: #fff;
+
+    .navbar{
+        border-bottom: $border-style;
+
+        .navbar-toggler{
+            display: inline-block;
+            border: #000000 1px solid;
+            height: 8rem;
+            width: 8rem;
+            margin-right: 4rem;
+        }
+
+        .navbar-nav{
+            a {
+                color: rgb(0, 0, 0);
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+        
+            a:hover{
+                border-bottom: 2px solid rgb(151, 146, 146);
+                color: #725a74;
+            }
+        }
+    }   
+}

@@ -1,0 +1,22 @@
+footer{
+    margin-top: 4rem;
+    padding-top: 1rem;
+    bottom:0px;
+    background: #ffffff;
+    height: 4rem;
+    border-top: $border-style;
+
+    .div-p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons {
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+}
