@@ -9,31 +9,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/imagenes/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Productos</title>
 
 </head>
 <body class="body-productos">
-    <header class="header nav">
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="tienda.html">Tienda</a>
-                </li>
-                <li>
-                <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="../index.html">
-                        <img src="/imagenes/logo.png" alt="Inicio">
-                    </a>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div><a class="navbar-brand" href="../index.html"><img src="/imagenes/logo.png" width="100px" height="100px"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-flex justify-content-end me-5" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active me-5" aria-current="page" href="tienda.html">Tienda</a>
+                    <a class="nav-link me-5" href="productos.html">Productos</a>
+                    <a class="nav-link me-5" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link me-5" href="contacto.html">Contacto</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -63,18 +62,28 @@
     </section>
 </main>
 
-    <footer>
-        <div class="div-p">
-            <p>Tenes alguna consulta? <a href="paginas/contacto.html">Contactanos!</a> </p>
+<footer>
+    <div class="row">
+        <div class="col">
+            <p>@Copyright</p>
         </div>
-        
-        <div class="icons">
-            <a  class="footerWp"   href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-            <a class="footerIg" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a class="footerFb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i> </a>
-            <a class="footerMap" href="https://www.google.com/maps/place/C%C3%B3rdoba,+Cordoba/@-31.399377,-64.3344291,11z/data=!3m1!4b1!4m5!3m4!1s0x9432985f478f5b69:0xb0a24f9a5366b092!8m2!3d-31.4200833!4d-64.1887761"
-            ><i class="fas fa-map-marker-alt"></i></a>
+        <div class="col">
+            <p>Tenes alguna consulta? <a href="contacto.html">Contactanos!</a> </p>
         </div>
-    </footer>
+
+        <div class="col">
+            <div class="icons">
+                <a class="footerWp" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                <a class="footerIg" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="footerFb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i> </a>
+                <a class="footerMap"
+                    href="https://www.google.com/maps/place/C%C3%B3rdoba,+Cordoba/@-31.399377,-64.3344291,11z/data=!3m1!4b1!4m5!3m4!1s0x9432985f478f5b69:0xb0a24f9a5366b092!8m2!3d-31.4200833!4d-64.1887761"><i
+                        class="fas fa-map-marker-alt"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

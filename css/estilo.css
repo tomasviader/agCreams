@@ -20,37 +20,37 @@ header{
     position: sticky;
     top: 0px;
     z-index: 100;
+    background-color: #fff;
 }
 
-nav{
-    background-color: #fff;
+
+.content-fluid{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.navbar{
     border-bottom: 2px solid rgb(151, 146, 146);
 }
 
-nav ul {
-    color: rgb(245, 240, 192);
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(5,1fr); 
-    align-items: center;
-    justify-items: center;
-}
 
-
-nav ul li img {
+.navbar button{
     object-fit: cover;
     height: 6rem;
     width: 6rem;
 }
 
-nav ul li a {
+.navbar-nav a {
     color: rgb(0, 0, 0);
     font-weight: 900;
     font-size: 1.5rem;
 }
 
-nav ul li a:hover{
+.navbar a:hover{
     border-bottom: 2px solid rgb(151, 146, 146);
+    color: #725a74;
 }
 
 
@@ -58,17 +58,15 @@ nav ul li a:hover{
 
 footer{
     margin-top: 4rem;
+    padding-top: 1rem;
     bottom:0px;
     background: #ffffff;
     height: 4rem;
-    display: grid;
-    grid-template-columns: repeat (3,1fr );
     border-top: rgb(151, 146, 146) 2px solid;
 }
     
 
 footer .div-p {
-    grid-column: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,18 +85,17 @@ footer .icons {
 /* -------------------------------- Pagina INDEX ----------------------------------------- */
 
 
-
 /* ----SECTION H1&IMG---- */
 
 
 .h1-img {
-    height: 50rem;
+    height: 46rem;
     width: 137.59;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: 20rem;
 }
 
 .video-index{
@@ -113,9 +110,11 @@ footer .icons {
 
 .h1-img h1{
     font-size: 5rem;
+    font-weight: 550;
     animation-name: h1-index;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    color: rgb(0, 0, 0);
 }
 
 @keyframes h1-index {
@@ -178,73 +177,19 @@ footer .icons {
 
 /* ----SECTION Index Catalogo---- */
 
-.sec-index-catalog{
-    height: 12rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    display: grid;
-    grid-template-columns:repeat(12,1fr);
+#carouselExampleSlidesOnly{
+    padding-top: 10rem;
 }
 
-.sec-index-catalog h2{
-    width: 100%;
-    grid-column: 2/5;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
 
-}
 
-.sec-index-catalog .p-left{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.7rem;
-    color: rgb(124, 73, 172); 
-    font-weight: 1000; 
-}
 
-.sec-index-catalog div{
-    grid-column: 6/11;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 2rem;
-    height: 12rem;
-}
-
-.sec-index-catalog div img{
-    margin-right: 1rem;
-}
-
-.sec-index-catalog div .img1{
-    z-index: 30;
-    border: solid 3px rgb(56, 36, 56);
-}
-
-.sec-index-catalog div .img2{
-    z-index: 20;
-    margin-right: -10rem;
-}
-.sec-index-catalog div .img3{
-    z-index: 20;
-    margin-left: -10rem;
-}
-
-.sec-index-catalog .p-right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.7rem;
-    color: rgb(124, 73, 172);
-    font-weight: 1000;   
-}
 
 
 /* ----SECTION Index Referencias---- */
 
 .sec-index-ref{
-    margin-top: 4rem;
+    margin-top: 10rem;
     display: grid;
     grid-template-columns:repeat(12,1fr);
     grid-template-rows: repeat (3,1fr);
@@ -265,7 +210,7 @@ footer .icons {
     width: 100%;
     grid-column: 6/8;
     grid-row: 1;
-    font-size: 1.5rem;
+    font-size: 3rem;
 
 }
 
@@ -320,13 +265,6 @@ footer .icons {
 
 
 
-
-
-
-
-
-
-
 /* -------------------------------- Pagina TIENDA ----------------------------------------- */
 
 .body-tienda {
@@ -362,31 +300,10 @@ footer .icons {
 
 
 
-.section-tienda{
-    margin-left: 2rem;
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: repeat (4,1fr );
-    grid-gap: 4rem;
-}
-
-.prod1{
-    width: 96vw;
-    grid-column: 1/2;
-    display: grid;
-    grid-template-columns: repeat(2, 30rem);
-    transition: .5s;
-}
-
-.prod1:hover{
-    background-color: #d4bcc0;
-}
-
-.prod1 div {
+.div-tienda{
     display: flex;
-    flex-direction: column;
-    align-self:stretch;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .prod1 img{
@@ -396,80 +313,6 @@ footer .icons {
     border-radius: 5%;
 }
 
-
-.prod2{
-    width: 96vw;
-    grid-column: 1/2;
-    display: grid;
-    grid-template-columns: repeat(2, 30rem);
-    transition: .5s;
-}
-
-.prod2:hover{
-    background-color: #d4bcc0;
-}
-
-.prod2 div {
-    display: flex;
-    flex-direction: column;
-    align-self:stretch;
-    justify-content: space-around;
-}
-
-.prod2 img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5%;
-}
-
-.prod3{
-    width: 96vw;
-    grid-column: 1/2;
-    display: grid;
-    grid-template-columns: repeat(2, 30rem);
-    transition: .5s;
-}
-
-.prod3:hover{
-    background-color: #d4bcc0;
-}
-
-.prod3 div {
-    display: flex;
-    flex-direction: column;
-    align-self:stretch;
-    justify-content: space-around;
-}
-
-.prod3 img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5%;
-}
-
-
-.p-name{
-    display: flex;
-    align-self: center;
-}
-
-.p-name p {
-    display: flex;   
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.price {
-    display: flex;
-    align-self: center;
-}
-
-.price p {
-    display: flex;   
-    font-size: 1.5rem;
-}
 
 
 
@@ -822,9 +665,9 @@ form{
         font-size: 8px;
     }
 
-header { 
+/* header { 
     display: none;
-}
+} */
 
 
 
