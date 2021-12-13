@@ -15,7 +15,7 @@ a{
     text-decoration:none;
 }
 
-/* ---------------  HEADER   ------------- */
+/* ---------------  HEADER   -------sass------ */
 header{
     position: sticky;
     top: 0px;
@@ -31,11 +31,13 @@ header{
 
 
 .navbar-toggler{
-    display: inline-block;
-    border: #000000 1px solid;
     height: 8rem;
     width: 8rem;
     margin-right: 4rem;
+}
+
+.navbar-toggler-icon  {
+    margin-right: 5rem;
 }
 
 
@@ -51,7 +53,7 @@ header{
 }
 
 
-/* ---------------     FOOTER    ------------- */
+/* ---------------     FOOTER    ------sass------- */
 
 footer{
     margin-top: 4rem;
@@ -77,6 +79,9 @@ footer .icons {
     justify-content: space-evenly;
 }
 
+footer .col p{
+    margin-left: 3rem;
+}
 
 
 /* -------------------------------- Pagina INDEX ----------------------------------------- */
@@ -174,8 +179,15 @@ footer .icons {
 
 /* ----SECTION Index Catalogo---- */
 
-#carouselExampleSlidesOnly{
-    padding-top: 10rem;
+.carousel .slide{
+    margin-top: 20rem;
+}
+
+.carousel-inner {
+    margin-top: 40rem;
+    width: 400px;
+    height: 600px;
+    margin: auto;
 }
 
 
@@ -296,29 +308,52 @@ footer .icons {
 }
 
 
-
-.div-tienda{
+.section-tienda{
+    margin-top: 10rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.prod1 img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5%;
+.div-tienda div {
+    margin-bottom: 10rem;
+    width: 30rem;
+    height: 80rem;
+}
+
+.card-title{
+    margin-top: 3rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.card-text{
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10rem;
+    width: 50%;
+    height: 6rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color:#EECFD4;
+    border-color: #0a0a0a;
+    color:rgb(0, 0, 0);
+}
+
+/* ------------------------------- Pagina PRODUCTOS ----------------------------------------- */ 
 
 
-
-
-
-
-
-/* -------------------------------- Pagina PRODUCTOS ----------------------------------------- */
 
 .body-productos {
     background-color: #B3D1C1;
@@ -662,9 +697,9 @@ form{
         font-size: 8px;
     }
 
-/* header { 
-    display: none;
-} */
+header {   
+    position: relative;
+}
 
 
 
@@ -676,45 +711,38 @@ form{
 /* -----------Footer QUERIES------------- */
 
 footer{
-    margin-top: 14rem;
-    bottom:0px;
-    background: #ffffff;
-    height: 14rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+    height: 10rem;
+    transform: scale(1);
+    flex-grow: 10rem;
 }
 
+footer .row {
+    display: block;
+}
 
-footer .div-p {
-    margin-top: 2rem;
+footer .col {
     display: flex;
-    align-items: center;
     justify-content: center;
-    
+    align-items: center;
 }
 
-footer .div-p p{
+footer .col p {
+    margin: 2rem;
     font-size: 2rem;
 }
 
-.div-p a {
+footer .col p a {
     font-size: 2rem;
+    color: #725a74;
 }
 
-footer .icons {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    margin-bottom: 4rem;
+footer .icons{
+    transform: scale(2.5);
 }
 
-
-
-
-
-
+footer .icons a {
+    margin: 2rem 2rem 3rem 2rem;
+}
 /* -------------------------------- INDEX QUERIES ----------------------------------------- */
 
 
@@ -731,7 +759,7 @@ footer .icons {
 }
 
 .video-index {
-    height: 30rem;
+    height: 70rem;
 }
 
 .h1-img .div-a {
@@ -739,54 +767,6 @@ footer .icons {
 }
 
 
-/* ----Index Catalogo QUERIES---- */
-
-
-
-
-.sec-index-catalog{
-    margin-bottom: 20rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.sec-index-catalog h2{
-    justify-content: center;
-    font-size: 3.5rem;
-
-}
-
-.carrusel-index{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5rem;
-}
-
-.sec-index-catalog .p-left{
-    margin-left: 14rem;
-    margin-right: .2rem;
-    justify-content: flex-start;
-    font-size: 7rem; 
-}
-
-
-.sec-index-catalog .p-right{
-    margin-right: 14rem;
-    margin-left: -2rem;
-    align-items: flex-end;
-    font-size: 7rem;  
-}
-
-
-.sec-index-catalog .carrusel{
-    display: flex;
-    flex-direction:row; 
-}
-
-.sec-index-catalog div img{
-    width: 17rem;
-    height: 17rem;
-}
 
 /* ----Index Referencias QUERIES---- */
 
@@ -795,7 +775,8 @@ footer .icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.5rem;
+    font-size: 5rem;
+    font-weight: 600;
 }
 
 
@@ -863,64 +844,58 @@ footer .icons {
 
 /* --------------------------------TIENDA QUERIES ----------------------------------------- */
 
-
-
-
 .h1-tienda{
-    height: 30vh;
-    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .h1-tienda h1{
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
-
-.section-tienda{
-    margin-left: 2rem;
-    width: 90%;
+.div-tienda {
+    display: block;
 }
 
-.section-tienda p {
-    font-size: 2rem;
+.div-tienda div {
+    margin-bottom: 15rem;
 }
 
-.prod1{
+.card-body{
+    font-size: 5rem;
+}
+
+.card-body h5{
+    margin-top: 4rem;
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    justify-content: center;
+    font-size: 5rem;
 }
 
-.prod1 div {
-    margin-left: 3rem;
-    width: 100%;
-}
-
-
-.prod2{
+.card-body .card-text{
+    margin-top: 5rem;
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    justify-content: center;
+    font-size: 5rem;
 }
 
-.prod2 div {
-    margin-left: 3rem;
-    width: 100%;
-}
-
-.prod3{
+.btn {
+    transform: scale(1);
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10rem;
+    width: 50%;
+    height: 6rem;
+    font-size: 3rem;
 }
 
-.prod3 div {
-    margin-left: 3rem;
-    width: 100%;
+.btn-primary {
+    background-color:#EECFD4;
+    border-color: #0a0a0a;
+    color:rgb(0, 0, 0);
 }
-
-
-
 
 /* --------------------------------PRODUCTOS QUERIES----------------------------------------- */
 
@@ -1176,10 +1151,6 @@ form{
     height: 5rem;
     font-size:2.5rem;
 }
-
-
-
-
 
 
 }
