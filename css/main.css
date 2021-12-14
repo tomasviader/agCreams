@@ -166,3 +166,56 @@ footer {
     grid-row: 4;
     margin-left: 2.5rem;
     display: flex; }
+
+/* -------------------------------- Pagina TIENDA ----------------------------------------- */
+.body-tienda {
+  background-color: #EECFD4; }
+  .body-tienda .h1-tienda {
+    height: 14rem;
+    width: 137.59;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .body-tienda .h1-tienda h1 {
+      color: #313030;
+      font-size: 3rem;
+      animation: h1-tienda;
+      animation-duration: 2s;
+      animation-iteration-count: .9; }
+
+@keyframes h1-tienda {
+  0% {
+    transform: translateX(-50vw); }
+  100% {
+    transform: translateX(0vw); } }
+  .body-tienda .section-tienda {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center; }
+    .body-tienda .section-tienda .div-tienda div {
+      margin-bottom: 10rem;
+      width: 30rem;
+      height: 80rem; }
+      .body-tienda .section-tienda .div-tienda div .card-title {
+        margin-top: 3rem;
+        font-size: 4rem;
+        text-align: center; }
+      .body-tienda .section-tienda .div-tienda div .card-text {
+        margin-top: 3rem;
+        font-size: 3rem;
+        text-align: center; }
+      .body-tienda .section-tienda .div-tienda div .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 10rem;
+        width: 50%;
+        height: 6rem;
+        font-size: 2rem;
+        font-weight: 600; }
+      .body-tienda .section-tienda .div-tienda div .btn-primary {
+        background-color: #EECFD4;
+        border-color: #0a0a0a;
+        color: black; }
