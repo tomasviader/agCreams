@@ -2,7 +2,7 @@ footer{
     margin-top: 4rem;
     padding-top: 1rem;
     bottom:0px;
-    background: #ffffff;
+    background: $back-footer;
     height: 4rem;
     border-top: $border-style;
 
@@ -18,5 +18,9 @@ footer{
         align-items: center;
         justify-content: center;
         justify-content: space-evenly;
+    }
+
+    p {
+        margin-left: 3rem;
     }
 }

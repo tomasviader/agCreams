@@ -2,17 +2,19 @@ header{
     position: sticky;
     top: 0px;
     z-index: 100;
-    background-color: #fff;
+    background-color: $back-header;
 
     .navbar{
         border-bottom: $border-style;
 
         .navbar-toggler{
-            display: inline-block;
-            border: #000000 1px solid;
             height: 8rem;
             width: 8rem;
             margin-right: 4rem;
+        }
+
+        .navbar-toggler-icon  {
+            margin-right: 5rem;
         }
 
         .navbar-nav{
@@ -23,8 +25,8 @@ header{
             }
         
             a:hover{
-                border-bottom: 2px solid rgb(151, 146, 146);
-                color: #725a74;
+                border-bottom: $border-style-hover;
+                color: $color-hover-header;
             }
         }
     }   
