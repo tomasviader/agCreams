@@ -20,22 +20,28 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div><a class="navbar-brand" href="#"><img src="/imagenes/logo.png" width="100px" height="100px"></a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <img src="/imagenes/menu.jpg" alt="">
-            </button>
-
-            <div class="collapse navbar-collapse d-flex justify-content-end me-5" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active me-5" aria-current="page" href="/paginas/tienda.html">Tienda</a>
-                    <a class="nav-link me-5" href="/paginas/productos.html">Productos</a>
-                    <a class="nav-link me-5" href="/paginas/nosotros.html">Nosotros</a>
-                    <a class="nav-link me-5" href="/paginas/contacto.html">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="../imagenes/LogoMakr-7d5V5A (2).png" alt=""></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="paginas/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/contacto.html" tabindex="-1">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -103,16 +109,13 @@
     </main>
 
     <footer>
-        <div class="container overflow-hidden">
-        <div class="row">
-            <div class="col copyright">
-                <p>@Copyright</p>
-            </div>
-            <div class="col p-consulta">
-                <p>Tenes alguna consulta? <a href="/paginas/contacto.html">Contactanos!</a> </p>
+    
+        <div class="rows">
+            <div class="colu">
+                <p>Tenes alguna consulta? <a href="contacto.html">Contactanos!</a> </p>
             </div>
 
-            <div class="col">
+            <div class="colu">
                 <div class="icons">
                     <a class="footerWp" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
                     <a class="footerIg" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -122,9 +125,11 @@
                             class="fas fa-map-marker-alt"></i></a>
                 </div>
             </div>
+            <div class="colu">
+                <p>@Copyright</p>
         </div>
-    </div>
-    </footer>
+    
+</footer>
 
 
 

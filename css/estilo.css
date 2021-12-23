@@ -23,31 +23,27 @@ header{
     background-color: #fff;
 }
 
+#navbarNav{
+    margin-left: 35rem;
+}
 
+
+#navbarNav li {
+    margin-right: 3rem;
+}
 
 .navbar{
     border-bottom: 2px solid rgb(151, 146, 146);
 }
 
 
-.navbar-toggler{
-    height: 8rem;
-    width: 8rem;
-    margin-right: 4rem;
-}
-
-.navbar-toggler-icon  {
-    margin-right: 5rem;
-}
-
-
-.navbar-nav a {
+#navbarNav li a {
     color: rgb(0, 0, 0);
-    font-weight: 900;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
-.navbar a:hover{
+#navbarNav a:hover{
     border-bottom: 2px solid rgb(151, 146, 146);
     color: #725a74;
 }
@@ -431,9 +427,9 @@ footer .col p{
 
 .img img{
     border-radius: 10%;
-    /* animation: h1-productos;
+    animation: h1-productos;
     animation-duration: 2.5s;
-    animation-iteration-count: .9; */
+    animation-iteration-count: .9;
 }
 
 
@@ -584,6 +580,7 @@ footer .col p{
 
 .h1-contacto{
     height: 15rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -702,7 +699,31 @@ header {
 }
 
 
+span img{
+    transform: scale(.5);
+}
 
+
+#navbarNav li {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+}
+
+#navbarNav li a{
+    color: rgb(46, 46, 46);
+    font-size: 2rem;
+}
+
+.navbar{
+    border-bottom: 2px solid rgb(151, 146, 146);
+}
+
+
+.navbar-toggler {
+    transform: scale(2);
+    margin-right: 4rem;
+}
 
 
 
@@ -711,38 +732,44 @@ header {
 /* -----------Footer QUERIES------------- */
 
 footer{
+    bottom: 0px;
+    margin-top: 10rem;
     height: 10rem;
-    transform: scale(1);
-    flex-grow: 10rem;
+    background-color: #fff;
 }
 
-footer .row {
-    display: block;
+footer .rows {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
 }
 
-footer .col {
+footer .colu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer .col p {
+footer .colu p {
     margin: 2rem;
     font-size: 2rem;
 }
 
-footer .col p a {
+footer .colu p a {
     font-size: 2rem;
     color: #725a74;
 }
 
 footer .icons{
     transform: scale(2.5);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 footer .icons a {
-    margin: 2rem 2rem 3rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
 }
+
 /* -------------------------------- INDEX QUERIES ----------------------------------------- */
 
 
@@ -1008,6 +1035,7 @@ footer .icons a {
 
 .img-nosotros1{
     transform: scale(.8);
+    margin-bottom: 3rem;
 }
 
 .p-nosotros1{
@@ -1026,9 +1054,9 @@ footer .icons a {
 }
 
 .img-nosotros2{
-    margin-left: 0rem;
-    margin-right: 4rem;
+    margin: 0 4rem 3rem 0;
     transform: scale(.8);
+    
 }
 
 .p-nosotros2{
@@ -1070,7 +1098,7 @@ form{
     display: flex;
     justify-content: center;
     width: 40rem;
-    order: 1;
+    
 }
 
 .form-nombre input {
@@ -1084,7 +1112,7 @@ form{
     display: flex;
     justify-content: center;
     width: 40rem;
-    margin-bottom: -4rem;
+    margin-bottom: -6rem;
 }
 
 .form-apellido input {
