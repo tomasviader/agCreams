@@ -1,0 +1,30 @@
+@mixin h1-font-size{
+	font-size: 5rem;
+}
+
+@mixin style-icons{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    background-color: rgb(151, 146, 146);
+
+}
+
+@mixin footer-base-querie {
+    bottom: 0px;
+    margin-top: 10rem;
+    height: 10rem;
+    background-color: #fff;
+}
+
+
+@mixin footer-base {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    bottom:0px;
+    background: $back-footer;
+    height: 2rem;
+    border-top: $border-style;
+}
+

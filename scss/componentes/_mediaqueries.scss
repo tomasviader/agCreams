@@ -1,0 +1,492 @@
+@media screen and (max-width: 768px) {
+
+    *{
+        font-size: 8px;
+    }
+
+header {   
+    position: relative;
+}
+
+
+span img{
+    transform: scale(.5);
+}
+
+
+#navbarNav li {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+}
+
+#navbarNav li a{
+    color: rgb(46, 46, 46);
+    font-size: 2rem;
+}
+
+.navbar{
+    border-bottom: 2px solid rgb(151, 146, 146);
+}
+
+
+.navbar-toggler {
+    transform: scale(2);
+    margin-right: 4rem;
+}
+
+
+
+
+
+/* -----------Footer QUERIES------------- */
+
+footer{
+    @include footer-base-querie;
+
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+
+        .colu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+
+            p {
+            margin: 2rem;
+            font-size: 2rem;
+
+                a {
+                font-size: 2rem;
+                color: #725a74;
+                }
+            }
+
+            .icons{
+                transform: scale(2.5);
+                display: flex;
+                justify-content: space-evenly;
+                
+                a {
+                @include style-icons;
+                }
+            }
+        }
+    }
+}
+/* -------------------------------- INDEX QUERIES ----------------------------------------- */
+
+
+
+
+
+.h1-img {
+    height: 30rem;
+    width:100%;
+}
+
+.h1-img h1{
+    font-size: 8rem;
+}
+
+.video-index {
+    height: 70rem;
+}
+
+.h1-img .div-a {
+    display: none;
+}
+
+
+
+/* ----Index Referencias QUERIES---- */
+
+.sec-index-ref h2{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+
+.ref1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ref1 img{
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;    
+}
+
+.sec-index-ref .ref1 p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+.ref2{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ref2 img{
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;    
+}
+
+.sec-index-ref .ref2 p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+.ref3{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ref3 img{
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;    
+}
+
+.sec-index-ref .ref3 p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+
+
+
+/* --------------------------------TIENDA QUERIES ----------------------------------------- */
+
+.h1-tienda{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.h1-tienda h1{
+    font-size: 7rem;
+}
+
+.div-tienda {
+    display: block;
+}
+
+.div-tienda div {
+    margin-bottom: 15rem;
+}
+
+.card-body{
+    font-size: 5rem;
+}
+
+.card-body h5{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.card-body .card-text{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.btn {
+    transform: scale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10rem;
+    width: 50%;
+    height: 6rem;
+    font-size: 3rem;
+}
+
+.btn-primary {
+    background-color:#EECFD4;
+    border-color: #0a0a0a;
+    color:rgb(0, 0, 0);
+}
+
+/* --------------------------------PRODUCTOS QUERIES----------------------------------------- */
+
+
+.h1-img-productos {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-img-productos h1{
+    font-size: 4rem;
+}
+
+
+/* ---- imagenes y texto---- */
+
+.section-productos {
+    display: grid;
+    grid-template-columns: repeat (3,1fr );
+    grid-template-rows: repeat (3,1fr);
+    grid-gap: 17rem;
+}
+
+.product1{
+    border-top: #937595 solid 4px;
+    border-bottom: #937595 solid 4px;
+}
+
+.product1 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    transform: scale(.8);
+}
+
+.img img{
+    border-radius: 10%;
+}
+
+.product1 .p-productos{
+    padding:0 2rem 2.5rem 2rem;
+    transform: scale(1.9);
+    margin-bottom: 2rem;
+}
+
+
+
+.product2{
+    border-top: #937595 solid 4px;
+    border-bottom: #937595 solid 4px;
+}
+
+.product2 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    transform: scale(.8);
+}
+
+.product2 .p-productos{
+    padding:0 2rem 2.5rem 2rem;
+    transform: scale(1.9);
+    margin-bottom: 2rem;
+}
+
+
+
+.product3{
+    border-top: #937595 solid 4px;
+    border-bottom: #937595 solid 4px;  
+}
+
+.product3 .img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    transform: scale(.8);
+}
+
+.product3 .p-productos{
+    padding:0 2rem 2.5rem 2rem;
+    transform: scale(1.9);
+    margin-bottom: 2rem;
+}
+
+
+
+/* --------------------------------NOSOTROS QUERIES----------------------------------------- */
+
+
+.h1-nosotros h1{
+    font-size: 8rem;
+}
+
+
+
+.section-nosotros{
+    margin-top: 10rem;
+    margin-left: 4rem;
+    margin-bottom: 15rem;
+    display: grid;
+    grid-template-columns: repeat (3,1fr );
+    grid-template-rows: repeat (2,1fr );
+    grid-gap:20rem;
+}
+
+.nosotros1 {
+    flex-direction: column;
+}
+
+.img-nosotros1{
+    transform: scale(.8);
+    margin-bottom: 3rem;
+}
+
+.p-nosotros1{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.p-nosotros1 p{
+    line-height: 1.8;
+    font-size: 2rem;
+}
+
+.nosotros2 {
+    flex-direction: column-reverse;
+}
+
+.img-nosotros2{
+    margin: 0 4rem 3rem 0;
+    transform: scale(.8);
+    
+}
+
+.p-nosotros2{
+    display: flex;
+    align-items: center;
+}
+
+.p-nosotros2 p{
+    line-height: 1.8;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* --------------------------------CONTACTO QUERIES----------------------------------------- */
+
+
+.h1-contacto{
+    height: 30rem;  
+}
+
+.h1-contacto h1{
+    font-size: 4.5rem;
+}
+
+
+.section-contacto{
+    height:80rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-nombre {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    
+}
+
+.form-nombre input {
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-apellido {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    margin-bottom: -6rem;
+}
+
+.form-apellido input {
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-email {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+}
+
+.form-email input {
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-telefono {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+}
+
+.form-telefono input {
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.input-consulta {
+    margin: auto;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.input-consulta #consulta {
+    width: 40rem;
+    padding:1rem;
+    font-size: 1.5rem;
+}
+
+
+.input-boton {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+}
+
+.input-boton input {
+    width: 30rem;
+    height: 5rem;
+    font-size:2.5rem;
+}
+
+
+}

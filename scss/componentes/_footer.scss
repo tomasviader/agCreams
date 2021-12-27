@@ -1,0 +1,60 @@
+footer{
+    @include footer-base;
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+
+        .colu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+
+            p {
+            margin: 1rem;
+            font-size: 1.3rem;
+            margin-bottom: .5rem;
+
+                a {
+                font-size: 1.3rem;
+                color: #725a74;
+                }
+            }
+
+            .icons{
+                transform: scale(1.5);
+                display: flex;
+                justify-content: space-evenly;
+                
+                a {
+                @include style-icons;
+                }
+            }
+        }
+    }
+
+$blue: #105266;
+$red: #da4c42;
+$yellow: #cec431;
+$green: #9bf08c;
+    
+$colors:(
+    info: $blue,
+    danger: $red,
+    warning: $yellow,
+    success: $green,
+);
+
+@each $name,$color in $colors {
+    .bg--#{$name} {
+        background-color: $color;
+    }
+}
+
+}
+
+
+
+

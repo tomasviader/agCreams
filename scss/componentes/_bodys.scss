@@ -1,0 +1,249 @@
+/* -------------------------------- BODY INDEX ----------------------------------------- */
+
+.body-index{
+
+
+    // ----SECTION H1&IMG---- //
+
+
+    .h1-img {
+        height: 46rem;
+        width: 137.59;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20rem;
+
+
+        .video-index{
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .div-h1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        
+        
+            h1{
+                @include h1-font-size;
+                font-weight: 550;
+                animation-name: h1-index;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+                color: rgb(0, 0, 0);
+            }
+
+            @keyframes h1-index {
+                0%{
+                    transform: translateY(-50vw);
+                }
+                50%{
+                    transform: translateY(0vw);
+                }
+        
+                75%{
+                    transform: translateY(-5vw);
+                }
+        
+                100%{
+                    transform: translateY(0vw);
+                }
+            }
+        }
+
+        .div-a {
+            margin-top: 14rem;
+            display: flex;
+            transform: rotate(90deg);
+            justify-content:center;
+            align-items: flex-end;
+            align-self:center;
+        
+        
+            a{
+                color: rgb(0, 0, 0);
+                font-size: 4rem;
+                font-weight: 600;
+                z-index: 20;
+                animation-name: arrow;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+        
+            @keyframes arrow {
+                0%{
+                    transform: translateX(0vw);
+                }
+            
+                50%{
+                    transform: translateX(5vw);
+                }
+            
+                100%{
+                    transform: translateX(0vw);
+                }
+            }
+        }
+    }
+
+    // ----SECTION Index Carousel---- //
+
+    .carousel .slide {
+        margin-top: 20rem;
+    }
+    .carousel-inner {
+        margin-top: 40rem;
+        width: 400px;
+        height: 600px;
+        margin: auto;
+    }
+
+
+
+    // ----SECTION Index Referencias---- //
+
+    .sec-index-ref{
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns:repeat(12,1fr);
+        grid-template-rows: repeat (3,1fr);
+        grid-gap: 5rem;
+
+        h2{
+            width: 100%;
+            grid-column: 6/8;
+            grid-row: 1;
+            font-size: 3rem;
+        }
+
+
+        img{
+            border-radius: 3.5rem;
+            transition: 1s;
+        }
+
+        img:hover{
+            transform: scale(1.2);
+        }
+        
+        
+        p {
+            margin-left: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.5;
+            font-weight: 590;
+        }
+
+        .ref1{
+            grid-column: 1/12;
+            grid-row: 2;
+            margin-left: 2.5rem;
+            display: flex;
+        }
+
+        .ref2{
+            grid-column: 1/12;
+            grid-row: 3;
+            margin-left: 2.5rem;
+            display: flex;
+        }
+
+        .ref3{
+            grid-column: 1/12;
+            grid-row: 4;
+            margin-left: 2.5rem;
+            display: flex;
+        }  
+    }
+}
+
+/* -------------------------------- BODY TIENDA ----------------------------------------- */
+
+.body-tienda {
+    background-color: $color-back-tienda;
+
+    .h1-tienda{
+        height: 14rem;
+        width: 137.59;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    
+        h1{
+            color: rgb(49, 48, 48);
+            @include h1-font-size;
+            animation: h1-tienda;
+            animation-duration: 2s;
+            animation-iteration-count: .9;
+        }
+        
+        @keyframes h1-tienda {
+            0%{
+                transform: translateX(-50vw);
+            }
+            
+            100%{
+                transform: translateX(0vw);
+            }
+        }
+    }
+
+    .section-tienda{
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+    
+        .div-tienda{
+        
+            div {
+                margin-bottom: 10rem;
+                width: 30rem;
+                height: 80rem;
+            
+                .card-title{
+                    margin-top: 3rem;
+                    font-size: 4rem;
+                    text-align: center;
+                }
+                
+                .card-text{
+                    margin-top: 3rem;
+                    font-size: 3rem;
+                    text-align: center;
+                }
+                
+                .btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    margin-top: 10rem;
+                    width: 50%;
+                    height: 6rem;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                
+                .btn-primary {
+                    background-color:#EECFD4;
+                    border-color: #0a0a0a;
+                    color:rgb(0, 0, 0);
+                }
+            }
+        }
+    }   
+}

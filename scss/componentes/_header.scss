@@ -1,0 +1,29 @@
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: $back-header;
+
+    nav{
+        border-bottom: 2px solid rgb(151, 146, 146);
+    
+        #navbarNav{
+            margin-left: 35rem;
+        
+            li {
+                margin-right: 3rem;
+
+                a {
+                    color: rgb(0, 0, 0);
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+
+                &:hover{
+                    border-bottom: $border-style-hover;
+                    color: $color-hover-header;
+                }
+            }
+        }
+    }
+}
