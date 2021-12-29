@@ -247,3 +247,252 @@
         }
     }   
 }
+
+/* -------------------------------- BODY PRODUCTOS ----------------------------------------- */
+
+.body-productos{
+    background-color: $color-back-producto;
+
+    .h1-img-productos {
+        height: 50rem;
+        width: 100%;
+        margin-bottom: 10rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+
+        .div-h1-prod{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                font-size: 4.3rem;
+                text-transform: uppercase;
+                animation: h1-productos;
+                animation-duration: 2.5s;
+                animation-iteration-count: .9;
+            }
+    
+            @keyframes h1-productos {
+                0%{
+                    transform: translateX(50vw);
+                    color: #B3D1C1;
+                }
+                
+                100%{
+                    transform: translateX(0vw);
+                    color :rgb(0, 0, 0)
+                }
+            }
+        }
+        
+    }
+    
+    
+    /* ---- imagenes y texto---- */
+    
+    .section-productos {
+        display: grid;
+        grid-template-columns: repeat (3,1fr );
+        grid-template-rows: repeat (4,1fr);
+        grid-gap: 10rem;
+
+        .img{
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+
+            img{
+                border-radius: 10%;
+                animation: h1-productos;
+                animation-duration: 2.5s;
+                animation-iteration-count: .9;
+            }
+        }
+
+        .p-productos{
+            width: 50%;
+            padding-bottom: 2.5rem;
+        }
+
+        .product1{
+            grid-row: 1;
+        }
+        
+        .product2{
+            grid-row: 2;
+        }
+
+        .product1,.product2{
+            display: flex;
+            border-top: $border-sectionproducto;
+            border-bottom: $border-sectionproducto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 1s;
+        }
+
+        .product1,.product2,img:hover{
+            animation: h1-productos;
+            animation-duration: 2.5s;
+            animation-iteration-count: .9;
+        }
+        }
+    
+}
+
+/* -------------------------------- BODY NOSOTROS ----------------------------------------- */
+
+.body-nosotros { 
+    background-color: $color-back-nosotros;
+
+    .h1-nosotros {
+        display: flex;
+        height: 20rem;
+        justify-content: center;
+        align-items: center;
+        
+        h1{
+            font-size: 5rem;
+            color: rgb(255, 255, 255);
+        }
+    }
+    
+    
+    
+    .section-nosotros{
+        margin-top: 10rem;
+        margin-left: 4rem;
+        margin-bottom: 15rem;
+        display: grid;
+        grid-template-columns: repeat (3,1fr );
+        grid-template-rows: repeat (2,1fr );
+        grid-gap:20rem;
+
+        .nosotros1 {
+            display: flex;
+            grid-row: 1;
+
+            .img-nosotros1{
+                margin-right: 4rem;
+                border-radius: 50%;
+            }
+            
+            .p-nosotros1{
+                display: flex;
+                align-items: center;
+                margin-right: 4rem;
+            }
+        }
+    }
+    
+    
+    .nosotros2 {
+        display: flex;
+        grid-row: 2;
+
+        .img-nosotros2{
+            margin-left: 4rem;
+            margin-right: 4rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .p-nosotros2{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+/* -------------------------------- BODY CONTACTO ----------------------------------------- */
+
+.body-contacto{
+    background-color:$color-back-contacto;
+
+    .h1-contacto{
+        height: 15rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        h1{
+            font-size: 3rem;
+        }
+    }
+    
+    .section-contacto{
+        margin: auto;
+        width: 50rem;
+        height:40rem;
+        border: #ffee99 3px solid;
+        
+        form{
+            width: 50rem;
+            display: grid;
+            grid-template-columns: repeat (2,1fr );
+
+            input { 
+                width: 17rem;
+                height: 2rem;
+                margin: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 4rem;
+                padding-left: 1rem;
+                border: #ffee99 1px solid;
+                color: rgb(0, 0, 0);
+                font-size: 1rem;
+                font-weight: 1000;
+            }
+        
+            .form-left{
+                grid-column: 1;
+                grid-row: 1;
+                margin: 2rem .5rem 4rem 4rem;
+            }
+            
+            .form-right{
+                grid-column: 2;
+                grid-row: 1;
+                margin: 2rem 3rem 4rem .5rem;
+            }
+            
+            .form-consulta{
+                display: flex;
+                margin: 0 .5rem 4rem 4rem;
+                width: 20rem;
+
+                #consulta{
+                    width: 15rem;
+                    max-height: 8rem;
+                    padding: 1rem;
+                    border: #ffee99 1px solid;
+                    color: rgb(0, 0, 0);
+                    font-size: 1rem;
+                    font-weight: 1000;
+                }
+            }
+            
+            .input-boton{
+                display: flex;
+                height: 10rem;
+                align-items: center;
+                padding-left: 4rem;
+
+                input{
+                    width: 10rem;
+                    height: 3rem;
+                    border-radius: 5%;
+                    background-color: #ffda1f;
+                    border: #ffda1f 1px solid;
+                    color: rgb(0, 0, 0);
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
