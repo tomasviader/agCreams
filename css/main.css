@@ -355,12 +355,14 @@ footer {
   .body-contacto .section-contacto {
     margin: auto;
     width: 50rem;
-    height: 40rem;
+    height: 50rem;
     border: #ffee99 3px solid; }
     .body-contacto .section-contacto form {
       width: 50rem;
-      display: grid;
-      grid-template-columns: repeat 2, 1fr; }
+      margin-bottom: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       .body-contacto .section-contacto form input {
         width: 17rem;
         height: 2rem;
@@ -372,17 +374,9 @@ footer {
         color: black;
         font-size: 1rem;
         font-weight: 1000; }
-      .body-contacto .section-contacto form .form-left {
-        grid-column: 1;
-        grid-row: 1;
-        margin: 2rem .5rem 4rem 4rem; }
-      .body-contacto .section-contacto form .form-right {
-        grid-column: 2;
-        grid-row: 1;
-        margin: 2rem 3rem 4rem .5rem; }
       .body-contacto .section-contacto form .form-consulta {
         display: flex;
-        margin: 0 .5rem 4rem 4rem;
+        margin-left: 2rem;
         width: 20rem; }
         .body-contacto .section-contacto form .form-consulta #consulta {
           width: 15rem;
@@ -395,8 +389,9 @@ footer {
       .body-contacto .section-contacto form .input-boton {
         display: flex;
         height: 10rem;
-        align-items: center;
-        padding-left: 4rem; }
+        margin-top: 5rem;
+        padding-left: 4rem;
+        align-items: center; }
         .body-contacto .section-contacto form .input-boton input {
           width: 10rem;
           height: 3rem;
