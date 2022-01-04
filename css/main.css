@@ -136,6 +136,10 @@ footer {
   100% {
     transform: translateX(0vw); } }
 
+.body-index #carouselExampleSlidesOnly {
+  padding-bottom: 5rem;
+  background-color: #b8b5b5; }
+
 .body-index .carousel .slide {
   margin-top: 20rem; }
 
@@ -465,6 +469,14 @@ footer {
       display: none; }
   #carouselExampleSlidesOnly {
     margin-top: 40rem; }
+    #carouselExampleSlidesOnly .carousel-inner {
+      padding-top: 2rem;
+      height: 500px; }
+      #carouselExampleSlidesOnly .carousel-inner .carousel-item img {
+        margin: auto;
+        width: 300px;
+        height: 450px;
+        border-radius: 3%; }
   /* ----Index Referencias QUERIES---- */
   .sec-index-ref h2 {
     margin-top: 4rem;

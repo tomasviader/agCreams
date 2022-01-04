@@ -103,6 +103,21 @@
 
     #carouselExampleSlidesOnly{
         margin-top: 40rem;
+
+        .carousel-inner{
+            padding-top: 2rem;
+            height: 500px;
+
+            .carousel-item{
+
+                img{
+                    margin: auto;
+                    width: 300px;
+                    height: 450px;
+                    border-radius: 3%;
+                }
+            }    
+        }
     }
 
     /* ----Index Referencias QUERIES---- */
