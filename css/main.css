@@ -621,26 +621,25 @@ footer {
       display: flex;
       align-items: center; }
   /* --------------------------------CONTACTO QUERIES----------------------------------------- */
-  .body-contacto {
-    padding-right: -2rem; }
-    .body-contacto .h1-contacto {
-      height: 30rem; }
-      .body-contacto .h1-contacto h1 {
-        font-size: 4.5rem; }
-    .body-contacto .section-contacto {
-      height: 90rem; }
-      .body-contacto .section-contacto form {
+  .body-contacto .h1-contacto {
+    height: 30rem; }
+    .body-contacto .h1-contacto h1 {
+      font-size: 4.5rem; }
+  .body-contacto .section-contacto {
+    height: 90rem; }
+    .body-contacto .section-contacto form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .body-contacto .section-contacto form .form-nombre, .body-contacto .section-contacto form .form-apellido, .body-contacto .section-contacto form .form-email, .body-contacto .section-contacto form .form-telefono, .body-contacto .section-contacto form .div-form-consulta, .body-contacto .section-contacto form .input-boton {
+        margin-top: 2rem;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center; }
-        .body-contacto .section-contacto form .form-nombre, .body-contacto .section-contacto form .form-apellido, .body-contacto .section-contacto form .form-email, .body-contacto .section-contacto form .form-telefono, .body-contacto .section-contacto form .div-form-consulta, .body-contacto .section-contacto form .input-boton {
-          margin-top: 2rem;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-        .body-contacto .section-contacto form #consulta {
-          display: flex;
-          margin-left: 1.5rem; }
-        .body-contacto .section-contacto form .input-boton input {
-          font-size: 2.5rem; } }
+      .body-contacto .section-contacto form #consulta {
+        display: flex;
+        margin-left: 1.5rem; }
+      .body-contacto .section-contacto form .input-boton input {
+        font-size: 2.5rem;
+        height: 4rem; } }

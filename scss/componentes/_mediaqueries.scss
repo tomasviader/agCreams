@@ -370,7 +370,6 @@
 /* --------------------------------CONTACTO QUERIES----------------------------------------- */
 
     .body-contacto{
-        padding-right:-2rem;
     
         .h1-contacto{
             height: 30rem;
@@ -379,7 +378,7 @@
                 font-size: 4.5rem;
             }
         }
-        
+
         .section-contacto{
             height:90rem;
 
@@ -406,6 +405,7 @@
                 .input-boton {
                     input{
                         font-size:2.5rem;
+                        height: 4rem;
                     }
                 }
             }
