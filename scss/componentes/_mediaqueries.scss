@@ -369,44 +369,46 @@
 
 /* --------------------------------CONTACTO QUERIES----------------------------------------- */
 
-
-    .h1-contacto{
-        height: 30rem;
-        
-        h1{
-            font-size: 4.5rem;
-        }
-    }
-
-
-    .section-contacto{
-        height:90rem;
-
-        form{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+    .body-contacto{
+        padding-right:-2rem;
+    
+        .h1-contacto{
+            height: 30rem;
             
+            h1{
+                font-size: 4.5rem;
+            }
+        }
+        
+        .section-contacto{
+            height:90rem;
 
-
-            .form-nombre,.form-apellido,.form-email,.form-telefono,.div-form-consulta,.input-boton{
-                margin-top: 2rem;
+            form{
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }
+                
 
-            #consulta {
-                display: flex;
-                margin-left: 1.5rem;
-            }
 
-            .input-boton {
-                input{
-                    font-size:2.5rem;
+                .form-nombre,.form-apellido,.form-email,.form-telefono,.div-form-consulta,.input-boton{
+                    margin-top: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                #consulta {
+                    display: flex;
+                    margin-left: 1.5rem;
+                }
+
+                .input-boton {
+                    input{
+                        font-size:2.5rem;
+                    }
                 }
             }
         }
-    }
+    }   
 }
