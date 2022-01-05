@@ -347,7 +347,8 @@ footer {
 
 /* -------------------------------- BODY CONTACTO ----------------------------------------- */
 .body-contacto {
-  background-color: #d2b9f3; }
+  background-color: #d2b9f3;
+  padding-right: -2rem; }
   .body-contacto .h1-contacto {
     height: 15rem;
     width: 100%;
