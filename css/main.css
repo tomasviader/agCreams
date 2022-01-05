@@ -410,8 +410,7 @@ footer {
   * {
     font-size: 8px; }
   header {
-    position: relative;
-    width: 100vw; }
+    position: relative; }
     header .navbar {
       border-bottom: 2px solid #979292; }
       header .navbar span img {
@@ -633,7 +632,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 90rem;
-    width: 100vw; }
+    width: 250px; }
     .body-contacto .section-contacto form {
       display: flex;
       flex-direction: column;
