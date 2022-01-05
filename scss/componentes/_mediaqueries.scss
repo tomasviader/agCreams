@@ -380,79 +380,30 @@
 
 
     .section-contacto{
-        height:80rem;
+        height:90rem;
 
         form{
-            input {
-                width: 20rem;
-                height: 4rem;
-                text-align: center;
-                font-size: 2rem;
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
 
-            .form-nombre {
+
+            .form-nombre,.form-apellido,.form-email,.form-telefono,.div-form-consulta,.input-boton{
+                margin-top: 2rem;
                 display: flex;
                 justify-content: center;
-                width: 40rem;
+                align-items: center;
             }
 
-            .form-apellido {
+            #consulta {
                 display: flex;
-                justify-content: center;
-                width: 40rem;
-                margin-top: -2rem;
-                margin-bottom: -6rem;
-            }
-            
-            
-            .form-right{
-                margin: auto;
-                padding-left: .5rem;
-
-
-                .form-email {
-                    margin: auto;
-                    display: flex;
-                    justify-content: center;
-                    width: 40rem;
-                    margin-bottom: -2rem;
-                }
-                
-                
-                
-                .form-telefono {
-                    margin-top: -5rem;
-                    margin: auto;
-                    display: flex;
-                    justify-content: center;
-                    width: 40rem;
-                }
-
-            }
-
-            .div-form-consulta{
-                display:block;
-                margin-right: auto;
-                margin-left: auto;
-
-                .form-consulta {
-                    display: block;
-                    margin-left: 16.5rem;
-                    margin-top: -6rem;
-                    width: 0rem; 
-                }
+                margin-left: 1.5rem;
             }
 
             .input-boton {
-                margin-top: -2rem;
-                margin-left: 2rem;
-                display: flex;
-                justify-content: center;
-                width: 40rem;
-
-                input {
-                    width: 30rem;
-                    height: 5rem;
+                input{
                     font-size:2.5rem;
                 }
             }
