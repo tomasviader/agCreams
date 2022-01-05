@@ -6,6 +6,7 @@
 
     header {   
         position: relative;
+        width: 100vw;
 
         .navbar{
             border-bottom: 2px solid rgb(151, 146, 146);
@@ -380,15 +381,20 @@
         }
 
         .section-contacto{
+            margin-top: -15rem;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             height:90rem;
+            width: 100vw;
 
             form{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                
-
+                width: 40rem;
 
                 .form-nombre,.form-apellido,.form-email,.form-telefono,.div-form-consulta,.input-boton{
                     margin-top: 2rem;

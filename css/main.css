@@ -410,7 +410,8 @@ footer {
   * {
     font-size: 8px; }
   header {
-    position: relative; }
+    position: relative;
+    width: 100vw; }
     header .navbar {
       border-bottom: 2px solid #979292; }
       header .navbar span img {
@@ -626,12 +627,19 @@ footer {
     .body-contacto .h1-contacto h1 {
       font-size: 4.5rem; }
   .body-contacto .section-contacto {
-    height: 90rem; }
+    margin-top: -15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90rem;
+    width: 100vw; }
     .body-contacto .section-contacto form {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      width: 40rem; }
       .body-contacto .section-contacto form .form-nombre, .body-contacto .section-contacto form .form-apellido, .body-contacto .section-contacto form .form-email, .body-contacto .section-contacto form .form-telefono, .body-contacto .section-contacto form .div-form-consulta, .body-contacto .section-contacto form .input-boton {
         margin-top: 2rem;
         display: flex;
