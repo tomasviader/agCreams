@@ -446,7 +446,7 @@ footer {
             font-size: 2rem;
             color: #725a74; }
         footer .rows .colu .icons {
-          transform: scale(2.5);
+          transform: scale(2);
           display: flex;
           justify-content: space-evenly; }
           footer .rows .colu .icons a {
@@ -479,17 +479,14 @@ footer {
         border-radius: 3%; }
   /* ----Index Referencias QUERIES---- */
   .sec-index-ref h2 {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: -7rem;
     font-size: 5rem;
     font-weight: 600; }
   .sec-index-ref .ref1, .sec-index-ref .ref2, .sec-index-ref .ref3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%; }
+    width: 85%; }
     .sec-index-ref .ref1 img, .sec-index-ref .ref2 img, .sec-index-ref .ref3 img {
       height: 200px;
       width: 200px;
