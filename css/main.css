@@ -461,7 +461,7 @@ footer {
     width: 100%; }
     .h1-img h1 {
       margin-top: 23rem;
-      transform: scale(2); }
+      transform: scale(1.5); }
     .h1-img .video-index {
       height: 70rem; }
     .h1-img #div-arrow {
@@ -469,6 +469,7 @@ footer {
   #carouselExampleSlidesOnly {
     margin-top: 40rem; }
     #carouselExampleSlidesOnly .carousel-inner {
+      width: 375px;
       padding-top: 2rem;
       height: 500px; }
       #carouselExampleSlidesOnly .carousel-inner .carousel-item img {
@@ -484,47 +485,23 @@ footer {
     align-items: center;
     font-size: 5rem;
     font-weight: 600; }
-  .sec-index-ref .ref1 {
+  .sec-index-ref .ref1, .sec-index-ref .ref2, .sec-index-ref .ref3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
-    .sec-index-ref .ref1 img {
+    width: 80%; }
+    .sec-index-ref .ref1 img, .sec-index-ref .ref2 img, .sec-index-ref .ref3 img {
       height: 200px;
       width: 200px;
-      margin-left: 2rem; }
-    .sec-index-ref .ref1 p {
-      margin-top: 3rem;
-      font-size: 2rem;
-      line-height: 1.7; }
-  .sec-index-ref .ref2 {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .sec-index-ref .ref2 img {
-      height: 200px;
-      width: 200px;
-      margin-left: 2rem; }
-    .sec-index-ref .ref2 p {
-      margin-top: 3rem;
-      font-size: 2rem;
-      line-height: 1.7; }
-  .sec-index-ref .ref3 {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .sec-index-ref .ref3 img {
-      height: 200px;
-      width: 200px;
-      margin-left: 2rem; }
-    .sec-index-ref .ref3 p {
-      margin-top: 3rem;
-      font-size: 2rem;
-      line-height: 1.7; }
+      margin: auto;
+      margin-bottom: 5rem; }
+    .sec-index-ref .ref1 .div-p-index, .sec-index-ref .ref2 .div-p-index, .sec-index-ref .ref3 .div-p-index {
+      width: 300px; }
+      .sec-index-ref .ref1 .div-p-index p, .sec-index-ref .ref2 .div-p-index p, .sec-index-ref .ref3 .div-p-index p {
+        margin: auto;
+        width: 300px;
+        font-size: 2rem;
+        line-height: 1.7; }
   /* --------------------------------TIENDA QUERIES ----------------------------------------- */
   .h1-tienda {
     margin-top: 10rem;
