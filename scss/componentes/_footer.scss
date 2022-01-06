@@ -19,7 +19,6 @@ footer{
 
                 a {
                 font-size: 1.3rem;
-                color: #725a74;
                 }
             }
 
@@ -29,29 +28,35 @@ footer{
                 justify-content: space-evenly;
                 
                 a {
-                @include style-icons;
+                    @include style-icons;
+                
+
+                    &:hover{
+                        transform: scale(1.5);
+                        transition: 1.5s;
+                    }
                 }
+
+                $colors:(
+                    Wp: #00bb2d,
+                    Ig: #572364,
+                    Fb: #3b5998,
+                    Map: #F90101,
+                );
+
+                @each $name,$color in $colors {
+                    .footer#{$name} {
+                        color: $color;
+                    }
+                }
+
+                
+                
             }
         }
     }
-
-$blue: #105266;
-$red: #da4c42;
-$yellow: #cec431;
-$green: #9bf08c;
     
-$colors:(
-    info: $blue,
-    danger: $red,
-    warning: $yellow,
-    success: $green,
-);
 
-@each $name,$color in $colors {
-    .bg--#{$name} {
-        background-color: $color;
-    }
-}
 
 }
 

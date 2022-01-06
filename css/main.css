@@ -50,8 +50,7 @@ footer {
         font-size: 1.3rem;
         margin-bottom: .5rem; }
         footer .rows .colu p a {
-          font-size: 1.3rem;
-          color: #725a74; }
+          font-size: 1.3rem; }
       footer .rows .colu .icons {
         transform: scale(1.5);
         display: flex;
@@ -60,16 +59,18 @@ footer {
           margin-top: 2rem;
           margin-right: 2rem;
           margin-bottom: 2rem;
-          margin-left: 2rem;
-          background-color: #979292; }
-  footer .bg--info {
-    background-color: #105266; }
-  footer .bg--danger {
-    background-color: #da4c42; }
-  footer .bg--warning {
-    background-color: #cec431; }
-  footer .bg--success {
-    background-color: #9bf08c; }
+          margin-left: 2rem; }
+          footer .rows .colu .icons a:hover {
+            transform: scale(1.5);
+            transition: 1.5s; }
+        footer .rows .colu .icons .footerWp {
+          color: #00bb2d; }
+        footer .rows .colu .icons .footerIg {
+          color: #572364; }
+        footer .rows .colu .icons .footerFb {
+          color: #3b5998; }
+        footer .rows .colu .icons .footerMap {
+          color: #F90101; }
 
 /* -------------------------------- BODYS ----------------------------------------- */
 /* -------------------------------- BODY INDEX ----------------------------------------- */
@@ -453,8 +454,7 @@ footer {
             margin-top: 2rem;
             margin-right: 2rem;
             margin-bottom: 2rem;
-            margin-left: 2rem;
-            background-color: #979292; }
+            margin-left: 2rem; }
   /* -------------------------------- INDEX QUERIES ----------------------------------------- */
   .h1-img {
     height: 20rem;
