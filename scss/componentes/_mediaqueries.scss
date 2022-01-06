@@ -79,7 +79,7 @@
 /* -------------------------------- INDEX QUERIES ----------------------------------------- */
 
 
-
+    .body-index{
 
 
     .h1-img {
@@ -121,44 +121,28 @@
         }
     }
 
-    /* ----Index Referencias QUERIES---- */
+   // ----SECTION Index Cremas---- //
 
-    .sec-index-ref{
+    .sec-index-cremas{
 
-            h2{
-            margin-left: -7rem;
-            font-size: 5rem;
-            font-weight: 600;
-            }
-        
+        h2{
+            margin-left: 14rem;
+            font-size: 3rem;
+        }
 
-        .ref1,.ref2,.ref3{
+
+        .cremas{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            width: 85%;
+            margin-left: 14rem;
             
-            img{
-            height: 200px;
-            width: 200px;
-            margin:auto;
-            margin-bottom: 5rem;
-
-            }
-
-            .div-p-index{
-                width: 300px;
-            
-            p {
-                margin: auto;
-                width: 300px;
-                font-size: 2rem;
-                line-height: 1.7;
-            }
+            .card{
+                margin-top: 6rem;
+                margin-bottom: 20rem;
+                transform: scale(1.5);
             }
         }
     }
-
 
 
 /* --------------------------------TIENDA QUERIES ----------------------------------------- */
@@ -216,6 +200,7 @@
         }
     }
 
+    }
 
 /* --------------------------------PRODUCTOS QUERIES----------------------------------------- */
 
