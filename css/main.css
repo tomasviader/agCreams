@@ -50,7 +50,8 @@ footer {
         font-size: 1.3rem;
         margin-bottom: .5rem; }
         footer .rows .colu p a {
-          font-size: 1.3rem; }
+          font-size: 1.3rem;
+          font-weight: bold; }
       footer .rows .colu .icons {
         transform: scale(1.5);
         display: flex;
@@ -59,7 +60,8 @@ footer {
           margin-top: 2rem;
           margin-right: 2rem;
           margin-bottom: 2rem;
-          margin-left: 2rem; }
+          margin-left: 2rem;
+          font-weight: bold; }
           footer .rows .colu .icons a:hover {
             transform: scale(1.5);
             transition: 1.5s; }
@@ -70,7 +72,7 @@ footer {
         footer .rows .colu .icons .footerFb {
           color: #3b5998; }
         footer .rows .colu .icons .footerMap {
-          color: #F90101; }
+          color: #c3464c; }
 
 /* -------------------------------- BODYS ----------------------------------------- */
 /* -------------------------------- BODY INDEX ----------------------------------------- */
@@ -190,7 +192,7 @@ footer {
     .body-tienda .section-tienda .div-tienda div {
       margin-bottom: 10rem;
       width: 30rem;
-      height: 80rem; }
+      height: 75rem; }
       .body-tienda .section-tienda .div-tienda div .card-title {
         margin-top: 3rem;
         font-size: 4rem;
@@ -204,7 +206,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin: auto;
-        margin-top: 10rem;
+        margin-top: 3rem;
         width: 50%;
         height: 6rem;
         font-size: 2rem;
@@ -285,7 +287,8 @@ footer {
     align-items: center; }
     .body-nosotros .h1-nosotros h1 {
       font-size: 5rem;
-      color: white; }
+      color: #2b2a2a;
+      font-weight: bold; }
   .body-nosotros .section-nosotros {
     margin-top: 10rem;
     margin-left: 4rem;
@@ -451,16 +454,22 @@ footer {
           height: 450px;
           border-radius: 3%; }
     .body-index .sec-index-cremas h2 {
-      margin-left: 14rem;
-      font-size: 3rem; }
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 6rem 0 10rem 0;
+      font-size: 4rem; }
     .body-index .sec-index-cremas .cremas {
       display: flex;
       flex-direction: column;
-      margin-left: 14rem; }
+      align-items: center; }
       .body-index .sec-index-cremas .cremas .card {
-        margin-top: 6rem;
-        margin-bottom: 20rem;
-        transform: scale(1.5); }
+        margin-top: 15rem;
+        margin-bottom: 33rem;
+        transform: scale(2); }
+      .body-index .sec-index-cremas .cremas .cream3 {
+        margin-bottom: 20rem; }
     .body-index .h1-tienda {
       margin-top: 10rem;
       margin-bottom: 10rem; }
@@ -488,7 +497,6 @@ footer {
           justify-content: center;
           align-items: center;
           margin: auto;
-          margin-top: 10rem;
           width: 50%;
           height: 6rem;
           font-size: 3rem; }
@@ -538,24 +546,21 @@ footer {
     grid-gap: 20rem; }
     .section-nosotros .nosotros1 {
       flex-direction: column; }
-      .section-nosotros .nosotros1 p {
-        line-height: 1.8;
-        font-size: 2rem; }
       .section-nosotros .nosotros1 .img-nosotros1 {
         transform: scale(0.8);
         margin-bottom: 3rem; }
-      .section-nosotros .nosotros1 .p-nosotros1 {
-        display: flex;
-        align-items: center;
-        margin-right: 4rem; }
-  .nosotros2 {
-    flex-direction: column-reverse; }
-    .nosotros2 .img-nosotros2 {
-      margin: 0 4rem 3rem 0;
-      transform: scale(0.8); }
-    .nosotros2 .p-nosotros2 {
+    .section-nosotros .nosotros2 {
+      flex-direction: column-reverse; }
+      .section-nosotros .nosotros2 .img-nosotros2 {
+        margin: 0 4rem 3rem 0;
+        transform: scale(0.8); }
+    .section-nosotros .p-nosotros1, .section-nosotros .p-nosotros2 {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      margin-right: 4rem; }
+      .section-nosotros .p-nosotros1 p, .section-nosotros .p-nosotros2 p {
+        line-height: 1.8;
+        font-size: 2rem; }
   /* --------------------------------CONTACTO QUERIES----------------------------------------- */
   .body-contacto .h1-contacto {
     height: 30rem; }

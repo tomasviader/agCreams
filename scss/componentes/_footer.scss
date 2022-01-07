@@ -19,6 +19,7 @@ footer{
 
                 a {
                 font-size: 1.3rem;
+                font-weight: bold;
                 }
             }
 
@@ -29,7 +30,7 @@ footer{
                 
                 a {
                     @include style-icons;
-                
+                    font-weight: bold;
 
                     &:hover{
                         transform: scale(1.5);
@@ -41,7 +42,7 @@ footer{
                     Wp: #00bb2d,
                     Ig: #572364,
                     Fb: #3b5998,
-                    Map: #F90101,
+                    Map: #c3464c,
                 );
 
                 @each $name,$color in $colors {
