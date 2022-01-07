@@ -273,7 +273,7 @@ footer {
         font-size: 2.5rem;
         color: #302f2f; }
       .body-productos .product1 .divp-productos1 .parr-descrip, .body-productos .product2 .divp-productos1 .parr-descrip, .body-productos .product3 .divp-productos1 .parr-descrip {
-        font-size: 1.3rem; }
+        font-size: 1.8rem; }
 
 /* -------------------------------- BODY NOSOTROS ----------------------------------------- */
 .body-nosotros {
@@ -503,27 +503,28 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .h1-img-productos h1 {
-      font-size: 4rem; }
+    .h1-img-productos .div-h1-prod {
+      display: block;
+      padding-bottom: 10rem; }
+      .h1-img-productos .div-h1-prod .h1-prod {
+        font-size: 4rem !important; }
   /* ---- imagenes y texto---- */
   .section-productos {
-    display: grid;
-    grid-template-columns: repeat 3, 1fr;
-    grid-template-rows: repeat 3, 1fr;
     grid-gap: 17rem; }
-    .section-productos .img {
-      margin-bottom: 3rem;
-      margin-top: 2rem;
-      transform: scale(0.8); }
-      .section-productos .img img {
-        border-radius: 10%; }
-    .section-productos .p-productos {
-      padding: 0 2rem 2.5rem 2rem;
-      transform: scale(1.9);
-      margin-bottom: 2rem; }
-    .section-productos .product1, .section-productos .product2, .section-productos .product3 {
-      border-top: #937595 solid 4px;
-      border-bottom: #937595 solid 4px; }
+    .section-productos .product1 .img, .section-productos .product2 .img, .section-productos .product3 .img {
+      transform: scale(0.8);
+      border-radius: 10%; }
+    .section-productos .product1 .btn, .section-productos .product2 .btn, .section-productos .product3 .btn {
+      font-size: 2.5rem; }
+    .section-productos .product1 .divp-productos1 .cream-title, .section-productos .product2 .divp-productos1 .cream-title, .section-productos .product3 .divp-productos1 .cream-title {
+      padding-left: 1rem; }
+    .section-productos .product1 .divp-productos1 .title-descrip, .section-productos .product2 .divp-productos1 .title-descrip, .section-productos .product3 .divp-productos1 .title-descrip {
+      padding-top: 2rem;
+      padding-right: 4rem;
+      font-size: 3rem; }
+    .section-productos .product1 .divp-productos1 .parr-descrip, .section-productos .product2 .divp-productos1 .parr-descrip, .section-productos .product3 .divp-productos1 .parr-descrip {
+      padding-top: 1rem;
+      padding-right: 2rem; }
   /* --------------------------------NOSOTROS QUERIES----------------------------------------- */
   .h1-nosotros h1 {
     font-size: 8rem; }

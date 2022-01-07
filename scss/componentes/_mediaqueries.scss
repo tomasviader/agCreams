@@ -81,68 +81,67 @@
 
     .body-index{
 
+        .h1-img {
+            height:20rem;
+            width:100%;
 
-    .h1-img {
-        height:20rem;
-        width:100%;
-
-        h1{
-            margin-top: 23rem;
-            transform: scale(1.5);
-        }
-        
-        
-        .video-index {
-            height: 70rem;
-        }
-        
-        #div-arrow {
-            display: none;
-        }
-    }
-
-    #carouselExampleSlidesOnly{
-        margin-top: 40rem;
-
-        .carousel-inner{
-            width: 375px;
-            padding-top: 2rem;
-            height: 500px;
-
-            .carousel-item{
-
-                img{
-                    margin: auto;
-                    width: 300px;
-                    height: 450px;
-                    border-radius: 3%;
-                }
-            }    
-        }
-    }
-
-   // ----SECTION Index Cremas---- //
-
-    .sec-index-cremas{
-
-        h2{
-            margin-left: 14rem;
-            font-size: 3rem;
-        }
-
-
-        .cremas{
-            display: flex;
-            flex-direction: column;
-            margin-left: 14rem;
-            
-            .card{
-                margin-top: 6rem;
-                margin-bottom: 20rem;
+            h1{
+                margin-top: 23rem;
                 transform: scale(1.5);
             }
+            
+            
+            .video-index {
+                height: 70rem;
+            }
+            
+            #div-arrow {
+                display: none;
+            }
         }
-    }
+
+        #carouselExampleSlidesOnly{
+            margin-top: 40rem;
+
+            .carousel-inner{
+                width: 375px;
+                padding-top: 2rem;
+                height: 500px;
+
+                .carousel-item{
+
+                    img{
+                        margin: auto;
+                        width: 300px;
+                        height: 450px;
+                        border-radius: 3%;
+                    }
+                }    
+            }
+        }
+
+    // ----SECTION Index Cremas---- //
+
+        .sec-index-cremas{
+
+            h2{
+                margin-left: 14rem;
+                font-size: 3rem;
+            }
+
+
+            .cremas{
+                display: flex;
+                flex-direction: column;
+                margin-left: 14rem;
+                
+                .card{
+                    margin-top: 6rem;
+                    margin-bottom: 20rem;
+                    transform: scale(1.5);
+                }
+            }
+        }
 
 
 /* --------------------------------TIENDA QUERIES ----------------------------------------- */
@@ -204,16 +203,21 @@
 
 /* --------------------------------PRODUCTOS QUERIES----------------------------------------- */
 
-
+    
     .h1-img-productos {
         height: 30rem;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        h1{
-            font-size: 4rem;
+        
+        .div-h1-prod{
+            display: block;
+            padding-bottom: 10rem;
+        
+            .h1-prod{
+            font-size: 4rem !important;
+        }
         }
     }
 
@@ -222,34 +226,37 @@
     /* ---- imagenes y texto---- */
 
     .section-productos {
-        display: grid;
-        grid-template-columns: repeat (3,1fr );
-        grid-template-rows: repeat (3,1fr);
         grid-gap: 17rem;
 
-        .img{
-            margin-bottom: 3rem;
-            margin-top: 2rem;
-            transform: scale(.8);
-
-            img{
-                border-radius: 10%;
-            }
-        }
-
-        .p-productos{
-            padding:0 2rem 2.5rem 2rem;
-            transform: scale(1.9);
-            margin-bottom: 2rem;
-        }
 
         .product1,.product2,.product3{
-            border-top: $border-sectionproductosquerie;
-            border-bottom: $border-sectionproductosquerie;
+
+            .img{
+                transform: scale(.8);
+                border-radius: 10%;
+            }
+
+            .btn{
+                font-size: 2.5rem;
+            }
+
+            .divp-productos1{
+                .cream-title{
+                    padding-left:1rem;
+                }
+                .title-descrip{
+                    padding-top: 2rem;
+                    padding-right: 4rem;
+                    font-size: 3rem;
+                }
+
+                .parr-descrip{
+                    padding-top: 1rem;
+                    padding-right: 2rem;
+                }
+            }    
         }
     }
-
-
 
 
 
