@@ -410,9 +410,6 @@ footer {
         header .navbar #navbarNav li a {
           color: #2e2e2e;
           font-size: 2rem; }
-      header .navbar #navbarNav .navbar-toggler {
-        transform: scale(2);
-        margin-right: 4rem; }
   /* -----------Footer QUERIES------------- */
   footer {
     bottom: 0px;
